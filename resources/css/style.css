@@ -1,0 +1,129 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	right: 50%;
+	top: 5%;
+	transform: translate(50%);
+	position: absolute;
+	color: #ffc758;
+	text-align: center;
+	font-size: 4.8rem;
+	font-weight: bold;
+}
+
+main {
+	height: 100vh;
+	background-color: #fa1639;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.boxes {
+	width: 800px;
+	height: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	border: 5px solid #ffc758;
+	position: relative;
+}
+
+.box {
+	width: 33.333333%;
+	height: 33.333333%;
+
+	cursor: pointer;
+	transition: 50ms ease;
+	overflow: hidden;
+}
+
+.box img {
+	width: 100%;
+	height: 100%;
+	transition: 100ms ease;
+	object-fit: cover;
+}
+
+.box img:hover {
+	opacity: 0.8;
+	transform: scale(1.05);
+}
+.box img:active {
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+.box5 {
+	object-position: 50% 50%;
+}
+.box7 {
+	object-position: 50% 20%;
+}
+
+.box8 {
+	object-position: 50% 20%;
+}
+.box9 {
+	object-position: 50% 20%;
+}
+
+/* .box:active {
+	transform: scale(0.95);
+} */
+
+video {
+	position: absolute;
+	width: 790px;
+	height: 590px;
+	object-fit: cover;
+}
+
+.none {
+	display: none;
+}
+
+.socials {
+	bottom: 5%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	gap: 2.4rem;
+}
+
+.socials a:link,
+.socials a:visited {
+	font-size: 3.2rem;
+	/* color: #eb326b; */
+	color: #faa5fa;
+}
+
+.socials a:hover {
+	color: #ffc758;
+}
+.fa-spotify {
+	font-size: 2.6rem;
+}
+
+.fa-itunes {
+	font-size: 2.8rem;
+}
