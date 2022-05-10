@@ -1,50 +1,16 @@
-document.querySelector('.box1').addEventListener('click', playNote1);
-document.querySelector('.box2').addEventListener('click', playNote2);
-document.querySelector('.box3').addEventListener('click', playNote3);
-document.querySelector('.box4').addEventListener('click', playNote8);
-document.querySelector('.box5').addEventListener('click', playRestSong);
-document.querySelector('.box6').addEventListener('click', playNote4);
-document.querySelector('.box7').addEventListener('click', playNote7);
-document.querySelector('.box8').addEventListener('click', playNote6);
-document.querySelector('.box9').addEventListener('click', playNote5);
+const boxes = document.querySelectorAll('.box');
 
-function playNote1() {
-	let note = document.querySelector('.note1');
-	stopNote(note);
-	note.play();
+for (box of boxes) {
+	box.addEventListener('click', (e) => {
+		console.log(e.target.id);
+
+		e.target.id === 'restSong'
+			? playRestSong()
+			: playNote(`.note${e.target.id}`);
+	});
 }
-function playNote2() {
-	let note = document.querySelector('.note2');
-	stopNote(note);
-	note.play();
-}
-function playNote3() {
-	let note = document.querySelector('.note3');
-	stopNote(note);
-	note.play();
-}
-function playNote4() {
-	let note = document.querySelector('.note4');
-	stopNote(note);
-	note.play();
-}
-function playNote5() {
-	let note = document.querySelector('.note5');
-	stopNote(note);
-	note.play();
-}
-function playNote6() {
-	let note = document.querySelector('.note6');
-	stopNote(note);
-	note.play();
-}
-function playNote7() {
-	let note = document.querySelector('.note7');
-	stopNote(note);
-	note.play();
-}
-function playNote8() {
-	let note = document.querySelector('.note8');
+function playNote(noteId) {
+	let note = document.querySelector(noteId);
 	stopNote(note);
 	note.play();
 }
