@@ -1,3 +1,5 @@
+// TODO - Add howler.js
+
 const boxes = document.querySelectorAll('.box');
 
 for (box of boxes) {
