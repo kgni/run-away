@@ -13,7 +13,7 @@ Made with all vanilla HTML, CSS & JavaScript.
 
 ## Optimizations
 Here is a list of what needs to be optimized:
-+ Fix delay when buttons are pressed (need to be preloaded)
++ Fix delay when buttons are pressed (needs to be preloaded)
 + Add instructions on how to play (or in general what the site is for)
 + Fix audio clipping on some audio files
 
